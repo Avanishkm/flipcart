@@ -1,0 +1,144 @@
+.navbar{
+    display: flex;
+    margin: 5px 130px 0 130px;
+    justify-content: space-between;
+    margin-top: 50px;
+
+}
+
+.nav_child{
+    padding: 12px 8px;
+    text-align: center;
+}
+
+.nav_child:hover{
+  color: grey;
+}
+
+.ul:hover{
+  color: blue;
+
+}
+.para{
+    font-size: 14px;
+    margin-top: 2px;
+    font-weight: 600;
+    font-family: inherit;
+}
+
+.select-container {
+    margin: 20px;
+  }
+  
+  .select-box {
+    width: 200px;
+    padding: 10px;
+    font-size: 16px;
+    border: none; /* Hide the border */
+    position: relative; /* Add position relative for proper arrow positioning */
+  }
+  
+  /* Style the dropdown arrow */
+  .select-box::after {
+    content: '\25BC'; /* Unicode character for down arrow */
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+  
+  /* Style the options */
+  .select-box option {
+    font-size: 16px;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: -2px;
+    font-weight: 500;
+  }
+  
+  li {
+    cursor: pointer;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+    margin-top: -9px;
+    
+  }
+  
+  ul ul {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 105%;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    z-index: 2; 
+  }
+
+  
+  
+  li:hover > ul {
+    display: block;
+    z-index: 3;
+    /* margin-right: 200px; */
+    left: 20%;
+  }
+
+
+  /*  */
+
+  @media (min-width: 1201px) {
+    /* .navbar {
+      margin: 5px 200px 0 200px;
+    } */
+  
+    .select-container {
+      margin: 40px;
+    }
+  
+    .select-box {
+      width: 250px;
+    }
+  
+    li {
+      padding: 12px; 
+    }
+  
+    ul ul {
+      left: 10%; 
+    }
+  }
+  
+
+  @media (min-width: 601px) and (max-width: 1024px) {
+    .navbar {
+      flex-direction: row;
+    }
+  
+    .select-box {
+      width: 150px; 
+    }
+  
+    ul ul {
+      left: 20%; 
+    }
+  }
+
+  @media (max-width: 600px) {
+    .navbar {
+      flex-direction: column; /* Stack items vertically for small screens */
+      align-items: center;
+    }
+  
+    .select-box {
+      width: 100%; /* Adjusted width for smaller screens */
+    }
+  
+    ul ul {
+      left: 0; /* Reset left position for smaller screens */
+    }
+  }
