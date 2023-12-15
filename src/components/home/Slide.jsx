@@ -3,7 +3,7 @@ import Carousel from 'react-multi-carousel'
 import "react-multi-carousel/lib/styles.css";
 import { products } from '../../constants/data';
 import Countdown from 'react-countdown';
-import { Box, Button, Divider, Typography } from '@material-ui/core';
+import { Box, Button, Divider, Typography } from '@mui/material';
 import styled from 'styled-components';
 
 

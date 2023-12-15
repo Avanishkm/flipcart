@@ -1,6 +1,6 @@
 import React, {  useState } from 'react';
 import "./header.css";
-import { Search } from '@material-ui/icons';
+
 
 import { products } from '../../constants/data';
 import DarkMood from './DarkMode';
@@ -65,7 +65,7 @@ const Header = () => {
          value={value}
          onChange={onChange}
          />
-        <Search onClick={()=> onSearch(value)} />
+        {/* <Search onClick={()=> onSearch(value)} /> */}
         
       </div> 
       <div className='dropdown'>
