@@ -1,22 +1,13 @@
-import React, { useEffect, useState } from 'react';
+import React, {  useState } from 'react';
 import "./header.css";
 import { Search } from '@material-ui/icons';
-import categoriesData from '../../constants/categoriesData';
-import ExpandableDropdown from '../cart/ExpandableDropdown';
-import ListBox from './ListBox';
-import SearchBox from './SearchBox';
+
 import { products } from '../../constants/data';
-import { Link } from 'react-router-dom';
 import DarkMood from './DarkMode';
-// import { useHistory } from "react-router-dom";
+
 
 const Header = () => {
-    // const history = useHistory();
-
-    // const transformData = (data) => data.results.slice(0,2);
-    // const dataPromise = async (query, signal) =>
-    //   await fetch(`https://swapi.dev/api/people/?search=${query}`, { signal });
-
+   
     const [value, setValue] = useState('');
 
     const onChange = (event)=> {

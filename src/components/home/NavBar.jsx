@@ -1,6 +1,5 @@
 import React from 'react'
 import "./navbar.css"
-import { navData } from '../../constants/data'
 import categoriesData from '../../constants/categoriesData'
 import ExpandableDropdown from '../cart/ExpandableDropdown'
 import electrictyData from '../../constants/electricty'
@@ -51,7 +50,6 @@ const NavBar = () => {
       </div>
       <div className='nav_child'>
         <img src="https://rukminim1.flixcart.com/flap/128/128/image/dff3f7adcf3a90c6.png?q=100" alt="Top Offers" />
-        {/* <p className='para'>Beauty, Toys & More</p>  */}
         <ul className='ul'>
           {beautiData.map((category) => (
             <ExpandableDropdown key={category.id} category={category}  />

@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import useFetchPromise from './useFetchPromise';
-import ListBox from './ListBox';
 
 
-const SearchBox = ({id, name,label, placeholder, autoComplete,maxItems,
+
+const SearchBox = ({id, name,label, placeholder, autoComplete,
     styles,debounceWait,listBox,noItemMessage,errorMessage,transformData}) => {
 
         const [query, setQuery] = useState("");
