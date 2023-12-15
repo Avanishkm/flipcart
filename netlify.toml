@@ -1,0 +1,4 @@
+[build]
+command = "npm run build"
+publish = "build"  # Update with your build directory
+node_version = "18.19.0"  # Update with the Node.js version you are using locally
