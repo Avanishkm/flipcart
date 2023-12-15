@@ -117,4 +117,4 @@ const Slide = ({title , timer}) => {
   )
 }
 
-export default Slide
+export default Slide;
